@@ -1,4 +1,6 @@
-/* globlal all */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,800&display=swap");
+
+/* global all */
 *,
 *::after,
 *::before {
@@ -6,4 +8,132 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* globlal all */
+:root {
+  --common-font: "Poppins";
+}
+.size {
+  width: 65vw;
+  margin: 0 auto;
+}
+/* global all */
+/* ---------------------------
+      Header section start 
+------------------------------*/
+.header-section {
+  background: #2d25a0;
+}
+/* Nav bar section start  */
+.manu-bar {
+  display: none;
+}
+.nav-bar {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items ul {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.nav-items ul > li {
+  list-style: none;
+}
+.nav-items ul > li a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.nav-items ul > li a:hover {
+  color: #e02c6d;
+}
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #e02c6d;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Hero section start */
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 50px 0;
+}
+.hero-info-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  color: #ffffff;
+}
+.hero-btn {
+  background: #e02c6d;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.hero-img {
+  width: 567px;
+}
+.hero-img img {
+  width: 100%;
+}
+/*--------------------------------
+        Header section end 
+---------------------------------*/
+
+/* -------------------------------
+  Responsive mobile start
+----------------------------------*/
+@media screen and (max-width: 688px) {
+  /* nav-bar styles */
+  .size {
+    width: 93vw;
+    margin: 0 auto;
+  }
+  .manu-bar {
+    display: inline;
+    color: #ffffff;
+    font-size: 40px;
+  }
+  .nav-items > ul {
+    display: none;
+  }
+  /* hero styles */
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-info-title {
+    font-size: 36px;
+  }
+  .hero-img {
+    width: 330px;
+  }
+}
+
+/* -------------------------------
+  Responsive mobile start
+----------------------------------*/
